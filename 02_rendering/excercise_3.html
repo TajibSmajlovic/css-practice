@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>
+		Huckleberry — CSS for JavaScript Developers
+	</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link crossorigin="anonymous" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+		rel="stylesheet" />
+	<style>
+		:root {
+			--primary: hsl(160deg, 100%, 30%);
+			--secondary-light: hsl(45deg, 100%, 50%);
+			--secondary-dark: hsl(45deg, 100%, 40%);
+			--gray-black: hsl(0deg, 0%, 0%);
+			--gray-very-dark: hsl(0deg, 0%, 10%);
+			--gray-dark: hsl(0deg, 0%, 30%);
+			--gray-medium: hsl(0deg, 0%, 40%);
+			--gray-light: hsl(0deg, 0%, 60%);
+			--white: hsl(0deg, 0%, 100%);
+		}
+
+		* {
+			box-sizing: border-box;
+			font-family: "Lato", sans-serif;
+		}
+
+		html {
+			font-size: 18px;
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		h1,
+		h2 {
+			margin: 0;
+		}
+
+		main {
+			padding: 80px 0;
+			background-color: var(--gray-light);
+		}
+
+		header {
+			border-bottom: 8px solid var(--gray-medium);
+		}
+
+		.max-width-wrapper {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 0 24px;
+		}
+
+		.intro-chunk {
+			max-width: 400px;
+			padding: 96px 0;
+		}
+
+		.intro-chunk p {
+			font-size: 1.25rem;
+			line-height: 1.4;
+		}
+
+		.intro-chunk strong {
+			color: var(--primary);
+		}
+
+		.title {
+			font-size: 2rem;
+			margin-bottom: 48px;
+		}
+
+		.card {
+			background-color: var(--white);
+			padding: 24px;
+			margin: -24px;
+			border-bottom: 8px solid var(--gray-medium);
+		}
+
+		.card h2 {
+			font-size: 2rem;
+		}
+
+		.card p {
+			font-size: 1.25rem;
+			line-height: 1.4;
+		}
+
+		.card p:last-child {
+			margin-bottom: 0;
+		}
+
+		.indented-heading {
+			width: -moz-fit-content;
+			width: fit-content;
+			margin-left: -32px;
+			margin-top: -16px;
+			padding: 16px 32px;
+			background-color: var(--secondary-light);
+			border-bottom: 8px solid var(--secondary-dark);
+
+		}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="max-width-wrapper">
+			<div class="intro-chunk">
+				<h1 class="title">Huckleberry</h1>
+
+				<p>
+					An avant-garde agency focused on connecting
+					<strong>passion</strong> with <strong>logistics</strong>.
+				</p>
+
+				<p>
+					A better way to solve the problems of tomorrow.
+				</p>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="max-width-wrapper">
+			<div class="card">
+				<h2 class="indented-heading">
+					Wealth comes from operations
+				</h2>
+				<p>
+					No modern business can thrive without developing a specialization in
+					operations. <em>Huckleberry</em> has helped dozens of companies,
+					from Fortune 50 monoliths to fast-growing Bay Area startups, achieve
+					their goals and meet their KPIs by leveraging our extensive network
+					of logistics experts.
+				</p>
+				<p>
+					<em>Huckleberry</em> was established in 2003 to help ambitious
+					businesses discover their true potential. If that resonates, let's
+					chat. ☎
+				</p>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
