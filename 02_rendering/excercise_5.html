@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tooltip</title>
+</head>
+
+
+<style>
+	.tooltip {
+		display: none;
+		position: absolute;
+		min-width: 150px;
+		padding: 8px;
+		font-size: 0.875rem;
+		font-weight: 400;
+		background: white;
+
+		/* border will inherit color from the color declaration */
+		border: 1px solid;
+		color: black;
+
+	}
+
+	.tooltip-trigger {
+		display: inline-block;
+		position: relative;
+	}
+
+	.tooltip-trigger:hover .tooltip {
+		display: block;
+	}
+</style>
+
+<body>
+	<p>
+		The traditional Japanese tea ceremony centers on the preparation, serving, and drinking of
+		<a href="/" class="tooltip-trigger">
+			matcha
+			<span class="tooltip">
+				A concentrated, powdered form of green tea
+			</span>
+		</a>
+		as hot tea.
+	</p>
+</body>
+
+</html>
