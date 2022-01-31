@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+	<style>
+		html,
+		body,
+		.wrapper {
+			margin: 0;
+			box-sizing: border-box;
+			height: 100%;
+		}
+
+		.box {
+			border: 3px solid;
+			padding: 16px;
+		}
+
+		header.box {
+			border-color: hsl(45deg 100% 50%);
+			background-color: hsl(45deg 100% 50% / 0.2);
+		}
+
+		nav.box {
+			border-color: hsl(65deg 100% 70%);
+			background-color: hsl(65deg 100% 70% / 0.2);
+		}
+
+		main.box {
+			border-color: hsl(95deg 100% 70%);
+			background-color: hsl(95deg 100% 70% / 0.2);
+		}
+
+		aside.box {
+			border-color: hsl(195deg 100% 70%);
+			background-color: hsl(195deg 100% 70% / 0.2);
+		}
+
+		footer.box {
+			border-color: hsl(250deg 100% 70%);
+			background-color: hsl(250deg 100% 70% / 0.2);
+		}
+
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.middle {
+			flex: 1;
+			display: flex;
+		}
+
+		.middle .box {
+			flex: 1;
+		}
+
+		.middle main.box {
+			flex: 3;
+		}
+	</style>
+
+	<div class="wrapper">
+		<header class="box">Header</header>
+		<section class="middle">
+			<nav class="box">Nav</nav>
+			<main class="box">Main Content</main>
+			<aside class="box">Ad unit</aside>
+		</section>
+		<footer class="box">Footer</footer>
+	</div>
+
+</body>
+
+</html>
